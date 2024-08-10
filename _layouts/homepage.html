@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    <title>{{ site.title }} | {{site.affiliation}}</title>
+    <title>{{ site.title }} | {{site.position}}</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,15 +49,16 @@
         <position style="font-size:1.10rem;">{{ site.position }}</position>
         <br>
         {% endif %}
-        {% if site.affiliation %}
+        <!-- {% if site.affiliation %}
         <a href="{{ site.affiliation_link }}" rel="noopener"><autocolor>{{ site.affiliation }}</autocolor></a>
         <br>
-        {% endif %}
-        {% if site.email %}
-        <email>{{ site.email }}</email>
-        {% endif %}
+        {% endif %} -->
+        <!-- {% if site.email %} -->
+        <p style="font-size:1.10rem;"><a href="https://sota-mnw.github.io/_site/assets/files/academic_cv.pdf">CV</a> | <a href="mailto:{{ site.email }}">Email</a></p>
+        <!-- <email href="{{ site.email_link }}" style="font-size:1.10rem;">{{ site.email }}</email> -->
+        <!-- {% endif %} -->
 
-        <br>
+        <!-- <br>
         <br>
         <div class="social-icons">
         {% if site.google_scholar %}
@@ -90,7 +91,7 @@
         </a>
         {% endif %}
         </div>
-        <br>
+        <br> -->
 
       </header>
       <section>
@@ -110,7 +111,7 @@
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
-    <script>
+    <scrif>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
